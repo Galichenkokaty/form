@@ -1,0 +1,210 @@
+@import url('~/assets/css/style/global.css');
+@import url('~/assets/css/style/cols.css');
+@import url('~/assets/css/style/colors.css');
+@import url('~/assets/css/style/flex.css');
+@import url('~/assets/css/style/grid.css');
+@import url('~/assets/css/style/inputs/__inputs.css');
+@import url('~/assets/css/fonts.css');
+
+.nav{
+    align-items: center;
+    padding: 1.375rem 2rem;
+    border-bottom: 1px solid #E7E7E7;
+}
+
+.nav__wrap{
+    width: 100%;
+    margin: auto;
+}
+
+.logo{
+    width: 5.8125rem;
+}
+
+.logo span{
+    padding-top: 31.182795698924732%;
+}
+
+.switch{
+    gap: 1.5rem;
+}
+
+.switch__item{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: var(--color__gray);
+    transition: all .24s ease-in-out;
+}
+
+.switch__item:hover{
+    color: var(--color__fill-1-h);
+    cursor: pointer;
+}
+
+.form, .preview{
+    margin: auto;
+    gap: 2.75rem;
+    margin-top: 1.875rem;
+}
+
+.form__block, .preview__block{
+    width: 100%;
+    gap: 1.25rem;
+}
+.form__block-inputs{
+    gap: 0.625rem;
+    width: 100%;
+}
+
+.form__block-input .big-input__input{
+    color: black;
+    height: 3.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.form__block-input .big-input__title{
+    font-size: 1rem;
+    left: 1rem;
+}
+
+.form__block-input:focus-within .big-input__input {
+    box-shadow: inherit !important;
+}
+
+.form__block-input{
+    width: 100%;
+    height: 3.5rem;
+    border: 1px solid var(--color__grayL);
+    border-radius: 0.25rem;
+}
+
+.form__block-input .big-input__input:focus::placeholder {
+    color: transparent;
+  }
+
+.form__block-title{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+}
+
+.form__block-head{
+    width: 100%;
+}
+
+.form__block-button{
+    color: var(--color__fill-1);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    background: none;
+    border: 2px solid var(--color__fill-1);
+    padding: 0.625rem 1.25rem;
+    border-radius: 6.25rem;
+    transition: all .24s ease-in-out;
+    gap: 0.25rem;
+}
+
+.form__block-button:hover{
+    cursor: pointer;
+    background: var(--color__fill-1);
+    color: white;
+}
+.form__block-button:hover .form__block-button-plus span{
+    border: 0.125rem solid white;
+}
+.form__block-button:active{
+    transform: scale(0.9);
+}
+
+.form__block-button-plus{
+    position: relative;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.form__block-button-plus span{
+    width: 1rem;
+    display: block;
+    border: 0.125rem solid var(--color__fill-1);
+    border-radius: 6.25rem;
+    position: absolute;
+    transition: all .24s ease-in-out;
+}
+
+.form__block-button-plus span:first-child{
+    transform: rotate(90deg);
+}
+
+.form__block-inputs-item{
+    width: 100%;
+    gap: 1.125rem;
+    flex-wrap: nowrap;
+}
+
+.--children .form__block-inputs .form__block-input{
+    width: 16.25rem;
+}
+
+.--children .form__block-title{
+    padding: .75rem 0;
+}
+
+.form__block-save{
+    color: white;
+    background-color: var(--color__fill-1);
+    transition: all .24s ease-in-out;
+    border: none;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: 0.625rem 1.25rem;
+    border-radius: 6.25rem;
+}
+
+.form__block-save:hover{
+    cursor: pointer;
+    background-color: var(--color__fill-1-h);
+}
+
+.form__block-save:active{
+    cursor: pointer;
+    background-color: var(--color__fill-1-a);
+}
+
+.form__block-inputs-delete{
+    color: var(--color__fill-1);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    transition: all .24s ease-in-out;
+}
+
+.form__block-inputs-delete:hover{
+    cursor: pointer;
+    color: var(--color__fill-1-h);
+}
+
+.preview__block-info{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    gap: 1.25rem;
+}
+
+.preview__block-info-children{
+    background-color: var(--color__grayL);
+    padding: 0.625rem 1.25rem;
+}
+
+
+@media screen and (max-width: 640px) {
+    .form, .preview{
+        padding: 0 1rem;
+    }
+}
